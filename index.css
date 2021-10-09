@@ -1,0 +1,129 @@
+
+/* Alternativa correta! Podemos representar a cor vermelha com o nome red, o hexadecimal #FF0000 e o RGB rgb(255,0,0).  */
+ 
+body {
+     background-color: #fdfbfb;  /*Na cor de fundo (background) */
+}
+
+header{
+    background: #bbbbbb;
+    margin-top: 0px;
+    padding: 20px 0px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav {
+    position: absolute; /*deixando o elemento livre para o posicionar */
+    top: 110px;
+    right: 0;
+  
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 0 0 6px;
+ 
+ }
+
+ nav a {
+    text-transform: uppercase; /* deixando todos os testos dentro de nav dentro da teg a em maiusculos*/
+    color: #000000;
+    font-weight: bold; /* deixando o testo em negrito*/
+    font-size: 25px;  /* aumentando a fonte da palavra*/
+    text-decoration: none; /*tirando o sublinhado do texto*/
+}
+
+nav a:hover { /*QUANDO O MOUSE PASSAR DENTRO DA TEG A-FAÇA ISSO */
+    color: #C78C19;   /*quando o moude passar mostre essa cor*/
+    text-decoration: underline; /*quando o moude passar mostre o sublinhado*/
+}
+
+
+
+#imgbanner {
+    width: 100%; /* largura da imagen, 100% da tela */
+
+    /* height: 120px; mexe na altura da imagen, poren pode distorser a img */
+}
+
+.principal {
+    background-color: #cccccc;
+    padding: 40px;
+    
+}
+
+.titulo-principal {
+    padding-left: 20px; /* fique 20px longe da parede da esquerda*/
+
+    /* padding-right: 20px; fique 20px longe da parede da direita */
+}
+
+.titulo-centralizado {
+    text-align: center;
+
+    /* height: 150px; altura */
+    /* border: 40px solid #000000; borda é a finalização do elemento */
+    /* padding: 20px; cria uma margem interna, espasamento inteno */
+    /* margin-left: 40px;  cria uma margem á esquerda
+    /* margin-top: 40px;   cria uma margem do topo */ 
+    /* margin: 40px;      cria uma margem em todos os 4 lados */
+ }
+
+p{
+    text-align: center;    /* No alinhamento deles (text-align) */
+}
+
+#font {
+     font-size: 20px;   /* No tamanho da fonte (font-size) */
+}
+
+em strong {
+     color: red;  /* Na cor do texto (color) */
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios {
+
+    background-color: white;
+    /* margin-right: 1600px; */
+    padding: 20px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+ul {
+    display: inline-block; /* pra poder mexer ele,e ele não ocupar a tela toda  */
+    vertical-align: top;   /* pra ele alinhar com a linha de cima */
+    width: 20%; /* falando que ela tem 20% de largura dessa pagina*/
+
+    /* margin-right: 20%; falando que ela tem um espasamento exteno para a direita de 15% */
+}
+
+#imgbeneficios {
+    width: 50%;
+    
+}
+
+
+footer {
+
+    text-align: center;
+    background: url("img/bg.jpg"); /*colocando uma cor de fundo pelo css*/
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    color: wheat;
+    margin-top: 20px;
+    font-size: 15px;
+}

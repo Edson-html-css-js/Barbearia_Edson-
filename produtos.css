@@ -1,0 +1,98 @@
+header{
+    background: #bbbbbb;
+    margin-top: 0px;
+    padding: 20px 0px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+     position: absolute; /*deixando o elemento livre para o posicionar */
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+   display: inline-block;
+   margin: 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform: uppercase; /* deixando todos os testos dentro de nav dentro da teg a em maiusculos*/
+    color: #000000;
+    font-weight: bold; /* deixando o testo em negrito*/
+    font-size: 25px;  /* aumentando a fonte da palavra*/
+    text-decoration: none; /*tirando o sublinhado do texto*/
+}
+
+nav a:hover { /*QUANDO O MOUSE PASSAR DENTRO DA TEG A-FAÇA ISSO */
+    color: #C78C19;   /*quando o moude passar mostre essa cor*/
+    text-decoration: underline; /*quando o moude passar mostre o sublinhado*/
+}
+
+.produtos {
+    width: 949px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.produtos li {
+    display: inline-block;/* Com o tamanho do seu conteúdo, mas regulável  */
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;    /*declarando borda, 2px, solida, e cor */
+    border-radius: 10px;
+}
+
+.produtos li:hover { /*quando o usuário passa o cursor sobre o elemento*/
+    color: #C78C19;  /*quando o moude passar mostre essa cor*/
+    font-size: 40px;
+
+}
+
+.produtos li:active { /* quando um elemento está sendo clicado pelo usuario*/
+    border-color: green;  /*quando o moude estiver  clicado mostre essa cor*/
+}
+.produtos li:hover h2 {  /*quando o moude passar no h2 do li dentro de produtos deiche a fonte com 25px*/
+    font-size: 35px;
+}
+
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 19px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+footer {
+
+    text-align: center;
+    background: url("img/bg.jpg"); /*colocando uma cor de fundo pelo css*/
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    color: wheat;
+    margin-top: 20px;
+    font-size: 15px;
+}
