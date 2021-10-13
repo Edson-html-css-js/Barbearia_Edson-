@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!--  odicionario que estamos usando  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <!--inportando CSS-->
+    <link rel="stylesheet" href="produtos.css">
+    <!--inportando CSS-->
+    <title>Contatos</title>
+
+
+</head>
+
+<body>
+    <header>
+        <!--cabeçalho da pagina -->
+        <div class="caixa">
+            <h1><img src="/img/logo.png" alt="logo da barbearia do Edson"></h1>
+
+            <nav>
+                <ul class="navegacao">
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                    <li> <a href="contato.html">CONTATO </a></li>
+
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <form>
+        <label for="nomeesobrenome">Nome e Sobrenome</label> <!--label e como se fose um <p> pra falar o que o usuario deve digitar nesse campo -->
+        <input type="text" id="nomeesobrenome" class="input-padrao" required>
+                                                            <!--required = significa que o canpo deve ser obrigatorio-->
+        <label for="email">Email</label>
+        <input type="email" id="email"  class="input-padrao" required placeholder="Digite seu email aqui">
+                                                            <!--placeholder é pra deichar uma mensagem para ajudar o usuario-->
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone"  class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+       
+        <label for="mensagem">Mensagem</label>
+        <!--campo para o usuario digita uma mensagem, por isso coloquei largura 70 colunas e altura de 10 linhas-->
+        <textarea cols="70" rows="10"  class="input-padrao" required></textarea>
+
+        <fieldset>
+            <legend class="p2">Como prefere o nosso contato?</legend>
+
+            <label for="radio-email">  <input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+           <!--Radio = são as bolinhas onde pode ser marcadas-->
+
+                                                        <!-- name = é pra quando clicar em um, o outro desclique, pois eles são do mesmo grupo, caso contrario o usuario poderia selecionar todos os radios-->
+            <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                Telefone</label>
+           
+            <label for="radio-Whatsaap"> <input type="radio" name="contato" value="Whatsaap" id="radio-Whatsaap" checked> Whatsaap</label>
+                                                                                        <!--checked deicha um campo já clicado, uma sugestão ao usuario-->
+
+            </fieldset>
+                
+        <fieldset>
+            
+            <legend class="p2">Qual horario prefere ser atendido?</legend>
+            <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </fildset>
+       
+
+        <label class="checkbox"><input type="checkbox" checked> Quer receber nossas novidades por email?</label>
+
+         <input type="submit" class="enviar">
+
+    </form>
+    
+    <br>
+    <table> <!--faz uma tabela-->
+
+        <thead><!--mostra que aqui e o cabeçalho da tabela-->
+
+            <tr><!--é o equivalente a uma linha-->
+                <th>Dia</th><!--é uma celula-->
+                <th>Horario</th>
+            </tr>
+
+        </thead>
+
+        <tbody> <!--diz que aqui é o corpo da tabela-->
+            <tr>
+                <td >Segunda</td><!--é uma celula-->
+                <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td><!--é uma celula-->
+                <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td><!--é uma celula-->
+                <td>8h ~ 20h</td>
+            </tr>
+        </tbody>
+        
+        
+    </table>
+</main>
+
+
+    <footer>
+        <img src="img/logo-branco.png" alt="logo da barbearia do Edson">
+
+        <p>&copy; Copyright Barbearia Edson - 2019</p>
+
+    </footer>
+
+</body>
+
+</html>
