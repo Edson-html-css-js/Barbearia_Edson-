@@ -1,3 +1,8 @@
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    /* font-family: 'Oswald', sans-serif;colando familha de fonte copiado do google fonts */
+}
+
 header{
     background: #bbbbbb;
     margin-top: 0px;
@@ -98,8 +103,7 @@ footer p {
 }
 
 main {
-    width: 940px;
-    margin: 0 auto;
+    
 }
 
 form {
@@ -159,5 +163,112 @@ thead {
 td, th {
     border: 1px solid #000000; /*borda da tabela de 1px solida e preta*/
     padding: 8px 15px;/*espaçamento interno 8px de altura e 15 de largura*/
+}
+
+/* css da página inicial */
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;/*linpando o float da img,por que o float altera a estrutura ao seu redor, limpando o titulo volta para logo abaixo, de onde acaba o float*/
+}
+
+
+/* deichando a primeira letra dos titulos em negrito, com o css! */
+.titulo-principal:first-letter {
+    font-weight: bold;
+
+}
+
+/* cria um espaço para o css antes e depois do inicio do titulo */
+.titulo-principal:before{
+  content: '[';
+}
+
+.titulo-principal:after{
+content: ']';
+}
+
+
+/* deixando doda primeira linha do nossos textos em italico  
+p::first-line{
+    font-style: italic;
+}*/
+
+
+
+.principal p {
+    margin: 0 0 1em;
+
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.conteudo-beneficios {
+    width: 40%;
+    margin: 0 auto;
+   
+}
+
+.lista-beneficios {
+    width: 40%;/* colocando 40% de largura*/
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imgbeneficios {
+    width: 60%;
+}
+.itens {
+    line-height: 1.5;
+}
+.itens:first-child {/*falando pro primeiro item da lista ser negrito*/
+    font-weight: bold;
+}
+
+.utencilios {
+    width: 120px;/*abaixando o tamanho da imagem para 150px*/
+    float: left; /*fazendo a img flutuar á left=esquerda, para ela ficar ao lado dos paragrafos*/
+    margin: 0 20px 20px 0;/*margem pro texto ficar 20px longe da img. 0 = cima, 20px = pra direita, 20px = baixo, 0 = pra esquerda*/
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.mapa {
+    padding: 3em 0;  /*colocando 45grau no degrade  */
+    /* background:linear-gradient( 90deg,orange,blue,red);aplicando degrade direto no css, top */
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em 0;
+    text-align: center;
+}
+
+.mapaconteudo{
+width: 940px;
+margin: 0 auto;
+
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto; /* 20px pra cima e pra baixo, e automatico pros lados*/
 }
 
