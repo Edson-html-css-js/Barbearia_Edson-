@@ -108,6 +108,7 @@ main {
 
 form {
     margin: 40px 0;
+    padding-left: 30px;
 }
 
 form label, form p {
@@ -145,9 +146,9 @@ form label, form p {
 }
 
 .enviar:hover {
-    background: rgb(195, 150, 3);
+    background: rgb(141, 109, 2);
     /* transform: scale(1.2);   aumenta este elemento quando o mouse passar encima, ele da um zoom, aqui de 1.2 */
-    transform: rotate(360deg) scale(1.2);/*inclina meu item em quantos graus eu quero, graus em igles é deg*/
+    transform: rotate(0deg) scale(1.0);/*inclina meu item em quantos graus eu quero, graus em igles é deg*/
 }
 
 table {
